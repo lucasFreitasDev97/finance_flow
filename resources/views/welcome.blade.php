@@ -1,57 +1,24 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Finance Flow</title>
-</head>
-<body>
-<main>
-    <div>
+@extends('layouts.default')
+@section('content')
+    {{--Contents here--}}
+    <div class="items-center">
         <h1>Finance Flow</h1>
-    </div>
-    <div>
-        <h3>Bem-vindo(a) <i>usuário</i></h3>
+        <smal>v.1</smal>
+        <p>
+            <em>
+                <strong>Tenha o controle do seu dinheiro</strong>
+            </em>
+        </p>
     </div>
     <nav>
-        <ul>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Transações</a></li>
-        </ul>
+        <div>
+            <ul>
+                <li>Despesas</li>
+                <li>Recebidos</li>
+            </ul>
+        </div>
     </nav>
-    <div>
-        <h4>Relatório</h4>
-    </div>
-    <div>
-        <form action="#">
-            <label for="">Mês</label>
-            <select>
-                <option value="">Selecione o mês</option>
-            </select>
-            <label for="">Ano</label>
-            <select>
-                <option value="">Selecione o ano</option>
-            </select>
-            <br><br>
-            <div>
-                <button type="submit">Exibir</button>
-            </div>
-        </form>
-    </div>
-    <br>
-    <div>
-        <table>
-            <thead>
-            <tr>
-                <th>Tipo</th>
-                <th>Valor</th>
-                <th>Data</th>
-            </tr>
-            </thead>
-        </table>
-    </div>
-</main>
-</body>
-</html>
+@endsection
+@section('scripts')
+    {{--Scripts here--}}
+@endsection
