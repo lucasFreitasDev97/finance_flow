@@ -18,6 +18,22 @@
             </ul>
         </div>
     </nav>
+    <main>
+        <div>
+            <div class="items-center">
+                <h2>Transações Anuais</h2>
+            </div>
+            <table>
+                <thead>
+                    <th>Transação</th>
+                    <th>Categoria</th>
+                    @foreach($months as $index => $month)
+                        <th>{{$month}}</th>
+                    @endforeach
+                </thead>
+            </table>
+        </div>
+    </main>
 @endsection
 @section('scripts')
     {{--Scripts here--}}

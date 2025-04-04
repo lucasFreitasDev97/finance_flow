@@ -1,3 +1,17 @@
 .items-center{
     text-align: center;
 }
+
+table {
+    border-collapse: collapse; /* Remove os espaços entre as bordas */
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black; /* Define uma borda para as células */
+    padding: 8px; /* Adiciona espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+th {
+    background-color: #f2f2f2; /* Adiciona um fundo às células de cabeçalho */
+}
