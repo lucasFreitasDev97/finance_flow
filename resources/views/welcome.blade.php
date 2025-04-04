@@ -13,8 +13,8 @@
     <nav>
         <div>
             <ul>
-                <li>Despesas</li>
-                <li>Recebidos</li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Transações</a></li>
             </ul>
         </div>
     </nav>
@@ -23,10 +23,24 @@
             <div class="items-center">
                 <h2>Transações Anuais</h2>
             </div>
+            <div class="items-center">
+                <form action="#">
+                    <div class="input-separate">
+                        <label for="year">Ano</label>
+                        <input type="number" name="year" id="year">
+                        <button type="submit">Exibir</button>
+                    </div>
+
+                </form>
+            </div>
             <table>
                 <thead>
+                    <th>#</th>
                     <th>Transação</th>
+                    <th>Tipo</th>
                     <th>Categoria</th>
+                    <th>Ações</th>
+                    <th>Ano</th>
                     @foreach($months as $index => $month)
                         <th>{{$month}}</th>
                     @endforeach
