@@ -1,23 +1,6 @@
 @extends('layouts.default')
 @section('content')
     {{--Contents here--}}
-    <div class="items-center">
-        <h1>Finance Flow</h1>
-        <smal>v.1</smal>
-        <p>
-            <em>
-                <strong>Tenha o controle do seu dinheiro</strong>
-            </em>
-        </p>
-    </div>
-    <nav>
-        <div>
-            <ul>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Transações</a></li>
-            </ul>
-        </div>
-    </nav>
     <main>
         <div>
             <div class="items-center">

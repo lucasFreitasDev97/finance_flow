@@ -1,15 +1,57 @@
+body{
+   background: #f7fafc;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
 table {
-    border-collapse: collapse; /* Remove os espaços entre as bordas */
+    border-collapse: collapse;
     width: 100%;
 }
 
 th, td {
-    border: 1px solid black; /* Define uma borda para as células */
-    padding: 8px; /* Adiciona espaçamento interno */
-    text-align: left; /* Alinha o texto à esquerda */
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
 }
+
 th {
-    background-color: #f2f2f2; /* Adiciona um fundo às células de cabeçalho */
+    background-color: #f2f2f2;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
 }
 
 .items-center{
@@ -19,3 +61,5 @@ th {
 .input-separate{
     margin: 1rem;
 }
+
+

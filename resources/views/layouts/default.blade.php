@@ -9,9 +9,12 @@
     <title>Fluxo Financeiro</title>
 </head>
 <body>
+    @include('layouts.header')
+    @include('layouts.nav')
     <main>
         @yield('content')
     </main>
+    @include('layouts.footer')
     <script>
         @yield('scripts')
     </script>
