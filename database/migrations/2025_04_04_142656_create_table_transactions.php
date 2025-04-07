@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('month');
             $table->string('document')->nullable();
             $table->string('payment_document')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
