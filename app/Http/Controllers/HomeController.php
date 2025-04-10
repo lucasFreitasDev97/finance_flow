@@ -23,7 +23,7 @@ class HomeController extends Controller
           12 => 'Dezembro',
         ];
 
-        return view('welcome', [
+        return view('home', [
             'months' => $months,
         ]);
     }
