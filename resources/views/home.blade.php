@@ -43,7 +43,6 @@
                     <th class="px-4 py-2 border">Tipo</th>
                     <th class="px-4 py-2 border">Valor</th>
                     <th class="px-4 py-2 border">Data</th>
-                    <th class="px-4 py-2 border">Ações</th>
                 </tr>
                 </thead>
                 <tbody class="text-gray-600">
@@ -52,35 +51,32 @@
                     <td class="px-4 py-2 border text-red-700">Despesa</td>
                     <td class="px-4 py-2 border text-red-700">- R$ 500,00</td>
                     <td class="px-4 py-2 border">14/04/2025</td>
-                    <td class="px-4 py-2 border">
-                        <a href="#" class="text-blue-700"><strong>Visualizar</strong></a> |
-                        <a href="#" class="text-yellow-400"><strong>Editar</strong></a> |
-                        <a href="#" class="text-red-700"><strong>Remover</strong></a>
-                    </td>
                 </tr>
                 <tr class="hover:bg-gray-50">
                     <td class="px-4 py-2 border">Alimentação</td>
                     <td class="px-4 py-2 border text-red-700">Despesa</td>
                     <td class="px-4 py-2 border text-red-700">- R$ 500,00</td>
                     <td class="px-4 py-2 border">14/04/2025</td>
-                    <td class="px-4 py-2 border">
-                        <a href="#" class="text-blue-700"><strong>Visualizar</strong></a> |
-                        <a href="#" class="text-yellow-400"><strong>Editar</strong></a> |
-                        <a href="#" class="text-red-700"><strong>Remover</strong></a>
-                    </td>
                 </tr>
                 <tr class="hover:bg-gray-50">
                     <td class="px-4 py-2 border">Alimentação</td>
                     <td class="px-4 py-2 border text-green-500">Entrada</td>
-                    <td class="px-4 py-2 border text-green-500">R$ 500,00</td>
+                    <td class="px-4 py-2 border text-green-500">+ R$ 500,00</td>
                     <td class="px-4 py-2 border">14/04/2025</td>
-                    <td class="px-4 py-2 border">
-                        <a href="#" class="text-blue-700"><strong>Visualizar</strong></a> |
-                        <a href="#" class="text-yellow-400"><strong>Editar</strong></a> |
-                        <a href="#" class="text-red-700"><strong>Remover</strong></a>
-                    </td>
                 </tr>
                 </tbody>
             </table>
         </div>
+        <table class="min-w-full table-auto text-sm text-left">
+            <thead class="bg-gray-100 text-gray-700">
+            <tr>
+                <th class="px-4 py-2 border">Saldo Final</th>
+            </tr>
+            </thead>
+            <tbody class="text-gray-600">
+            <tr class="hover:bg-gray-50">
+                <td class="px-4 py-2 border">R$ -500,00</td>
+            </tr>
+            </tbody>
+        </table>
 </x-layout>
