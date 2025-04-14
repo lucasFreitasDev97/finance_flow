@@ -14,6 +14,7 @@ class Transaction extends Model
         'category_id',
         'year',
         'month',
+        'date',
         'document',
         'payment_document',
     ];

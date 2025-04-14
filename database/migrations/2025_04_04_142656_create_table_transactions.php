@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('category_id')->constrained('categories');
             $table->integer('year');
             $table->integer('month');
+            $table->date('date');
             $table->string('document')->nullable();
             $table->string('payment_document')->nullable();
             $table->softDeletes();

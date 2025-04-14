@@ -1,6 +1,6 @@
 <x-layout>
     <div>
-        <h1 class="text-2xl font-bold text-center mb-5">📅 Transações Anuais</h1>
+        <h1 class="text-2xl font-bold text-center mb-5">📅 Transações Mensais</h1>
     </div>
     <form action="" method="POST">
         <div class="flex flex-row items-center justify-center space-x-4 mb-5">
@@ -41,39 +41,44 @@
                 <tr>
                     <th class="px-4 py-2 border">Categoria</th>
                     <th class="px-4 py-2 border">Tipo</th>
-                    <th class="px-4 py-2 border">Transação</th>
-                    <th class="px-4 py-2 border">Janeiro</th>
-                    <th class="px-4 py-2 border">Fevereiro</th>
-                    <th class="px-4 py-2 border">Março</th>
-                    <th class="px-4 py-2 border">Abril</th>
-                    <th class="px-4 py-2 border">Maio</th>
-                    <th class="px-4 py-2 border">Junho</th>
-                    <th class="px-4 py-2 border">Julho</th>
-                    <th class="px-4 py-2 border">Agosto</th>
-                    <th class="px-4 py-2 border">Setembro</th>
-                    <th class="px-4 py-2 border">Outubro</th>
-                    <th class="px-4 py-2 border">Novembro</th>
-                    <th class="px-4 py-2 border">Dezembro</th>
+                    <th class="px-4 py-2 border">Valor</th>
+                    <th class="px-4 py-2 border">Data</th>
+                    <th class="px-4 py-2 border">Ações</th>
                 </tr>
                 </thead>
                 <tbody class="text-gray-600">
-                <!-- Linhas de exemplo -->
                 <tr class="hover:bg-gray-50">
                     <td class="px-4 py-2 border">Alimentação</td>
-                    <td class="px-4 py-2 border">Despesa</td>
-                    <td class="px-4 py-2 border">Supermercado</td>
-                    <td class="px-4 py-2 border">R$ 500</td>
-                    <td class="px-4 py-2 border">R$ 450</td>
-                    <td class="px-4 py-2 border">R$ 480</td>
-                    <td class="px-4 py-2 border">R$ 520</td>
-                    <td class="px-4 py-2 border">R$ 530</td>
-                    <td class="px-4 py-2 border">R$ 500</td>
-                    <td class="px-4 py-2 border">R$ 490</td>
-                    <td class="px-4 py-2 border">R$ 510</td>
-                    <td class="px-4 py-2 border">R$ 530</td>
-                    <td class="px-4 py-2 border">R$ 540</td>
-                    <td class="px-4 py-2 border">R$ 560</td>
-                    <td class="px-4 py-2 border">R$ 580</td>
+                    <td class="px-4 py-2 border text-red-700">Despesa</td>
+                    <td class="px-4 py-2 border text-red-700">- R$ 500,00</td>
+                    <td class="px-4 py-2 border">14/04/2025</td>
+                    <td class="px-4 py-2 border">
+                        <a href="#" class="text-blue-700"><strong>Visualizar</strong></a> |
+                        <a href="#" class="text-yellow-400"><strong>Editar</strong></a> |
+                        <a href="#" class="text-red-700"><strong>Remover</strong></a>
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="px-4 py-2 border">Alimentação</td>
+                    <td class="px-4 py-2 border text-red-700">Despesa</td>
+                    <td class="px-4 py-2 border text-red-700">- R$ 500,00</td>
+                    <td class="px-4 py-2 border">14/04/2025</td>
+                    <td class="px-4 py-2 border">
+                        <a href="#" class="text-blue-700"><strong>Visualizar</strong></a> |
+                        <a href="#" class="text-yellow-400"><strong>Editar</strong></a> |
+                        <a href="#" class="text-red-700"><strong>Remover</strong></a>
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-50">
+                    <td class="px-4 py-2 border">Alimentação</td>
+                    <td class="px-4 py-2 border text-green-500">Entrada</td>
+                    <td class="px-4 py-2 border text-green-500">R$ 500,00</td>
+                    <td class="px-4 py-2 border">14/04/2025</td>
+                    <td class="px-4 py-2 border">
+                        <a href="#" class="text-blue-700"><strong>Visualizar</strong></a> |
+                        <a href="#" class="text-yellow-400"><strong>Editar</strong></a> |
+                        <a href="#" class="text-red-700"><strong>Remover</strong></a>
+                    </td>
                 </tr>
                 </tbody>
             </table>
