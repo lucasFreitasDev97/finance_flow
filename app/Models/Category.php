@@ -14,6 +14,9 @@ class Category extends Model
         'type',
     ];
 
+    const INCOME = 'income';
+    const EXPENSE = 'expense';
+
     public function transactions(): HasMany
     {
         return $this->hasMany(Transaction::class, 'category_id');

@@ -79,4 +79,5 @@
             </tr>
             </tbody>
         </table>
+    </div>
 </x-layout>

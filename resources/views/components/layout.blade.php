@@ -11,7 +11,7 @@
 <header class="bg-blue-700 text-white p-4 flex items-center justify-between shadow-md">
     <h1 class="text-2xl font-bold">💰 Finance Flow</h1>
     <nav class="space-x-4">
-        <a href="#" class="hover:underline">Categorias</a>
+        <a href="{{route('categories.index')}}" class="hover:underline">Categorias</a>
         <a href="#" class="hover:underline">Transações</a>
     </nav>
 </header>

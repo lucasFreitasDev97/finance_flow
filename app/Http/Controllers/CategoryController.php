@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\CategoryTypeEnum;
 use App\Models\Category;
 use App\Services\CategoryService;
 use Illuminate\Http\RedirectResponse;
@@ -29,7 +30,9 @@ class CategoryController extends Controller
             $category = $this->categoryService->findCategory($category);
         }
 
-        return \view('categories.form', ['category' => $category]);
+        $categoryTypes = CategoryTypeEnum::getDescriptiveValues();
+
+        return \view('categories.form', ['category' => $category, 'categoryTypes' => $categoryTypes]);
     }
 
     public function store(Request $request): RedirectResponse
