@@ -14,7 +14,6 @@
             </thead>
             <tbody class="text-gray-600 ">
             @foreach($categories as $category)
-
                 <tr class="@if($category->type == 'expense') hover:bg-red-50 text-red-700 @else hover:bg-green-50 text-green-700 @endif">
                     <td class="px-4 py-2 border">{{$category->name}}</td>
                     <td class="px-4 py-2 border">

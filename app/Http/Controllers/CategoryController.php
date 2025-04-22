@@ -40,7 +40,7 @@ class CategoryController extends Controller
         $data = $request->all();
         $this->categoryService->storeCategory($data);
 
-        return redirect(route('categories.index'));
+        return redirect(route('categories.index'))->with('success', 'Categoria criada com sucesso!');
     }
 
     public function update(Request $request, Category $category): RedirectResponse
@@ -48,7 +48,7 @@ class CategoryController extends Controller
         $data = $request->all();
         $this->categoryService->updateCategory($category, $data);
 
-        return redirect(route('categories.index'));
+        return redirect(route('categories.index'))->with('success', 'Categoria atualizada com sucesso!');
     }
 
     public function destroy(Category $category): RedirectResponse
