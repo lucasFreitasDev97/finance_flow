@@ -7,6 +7,26 @@ use Illuminate\Http\Request;
 
 class IncomeController extends Controller
 {
+    public function index(Request $request)
+    {
+        $month = $request->month ?? now()->month;
+        $year  = $request->year  ?? now()->year;
+
+        $incomes = Income::whereMonth('income_date', $month)
+            ->whereYear('income_date', $year)
+            ->orderBy('income_date', 'desc')
+            ->get();
+
+        $total = $incomes->sum('amount');
+
+        return view('incomes.index', compact(
+            'incomes',
+            'total',
+            'month',
+            'year'
+        ));
+    }
+
     public function create()
     {
         return view('incomes.create');

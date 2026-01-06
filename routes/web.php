@@ -8,13 +8,13 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
-Route::resource('expenses', ExpenseController::class)->only([
-    'index', 'create', 'store'
-]);
+Route::resource('expenses', ExpenseController::class)
+    ->only(['index', 'create', 'store', 'edit', 'update', 'destroy']);
 
-Route::resource('incomes', IncomeController::class)->only([
-    'create', 'store'
-]);
+
+Route::resource('incomes', IncomeController::class)
+    ->only(['index', 'create', 'store', 'edit', 'update', 'destroy']);
+
 
 Route::resource('categories', CategoryController::class)
     ->only(['index', 'create', 'store']);

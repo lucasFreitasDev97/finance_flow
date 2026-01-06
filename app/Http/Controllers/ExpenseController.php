@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class ExpenseController extends Controller
 {
-    public function index(Request $request): View
+    public function index(Request $request)
     {
         $month = $request->month ?? now()->month;
         $year  = $request->year  ?? now()->year;
@@ -19,6 +19,7 @@ class ExpenseController extends Controller
         $expenses = Expense::with('category')
             ->whereMonth('expense_date', $month)
             ->whereYear('expense_date', $year)
+            ->orderBy('expense_date', 'desc')
             ->get();
 
         $total = $expenses->sum('amount');
@@ -35,6 +36,7 @@ class ExpenseController extends Controller
             'year'
         ));
     }
+
 
     public function create(): View
     {
